@@ -11,4 +11,5 @@ end
 
 def save_tasks(tasks)
     File.write(FILENAME, { saved_tasks: tasks }.to_json)
+    tasks
 end

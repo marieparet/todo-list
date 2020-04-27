@@ -5,7 +5,7 @@ def ask_user_input
     gets.strip
 end
 
-retrieve_tasks
+tasks = retrieve_tasks
 
 loop do
 

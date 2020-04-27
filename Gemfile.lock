@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mocha (1.11.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mocha
+
+BUNDLED WITH
+   2.1.4

@@ -1,7 +1,7 @@
 require_relative 'storage_manager'
 
 def list_tasks(tasks)
-    puts "What do you want to do ?"
+    puts "Here are your current tasks :"
     p tasks
 end
 
@@ -20,3 +20,4 @@ def remove_task_from(tasks)
     puts "Task has been removed"
     save_tasks(tasks)
 end
+
