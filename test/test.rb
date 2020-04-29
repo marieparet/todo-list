@@ -1,4 +1,4 @@
-require_relative 'task_manager'
+require_relative '../app/task_manager'
 require 'minitest/autorun'
 require 'minitest/unit'
 require 'mocha/minitest'
