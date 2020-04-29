@@ -2,12 +2,14 @@ GEM
   remote: https://rubygems.org/
   specs:
     mocha (1.11.2)
+    rake (13.0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   mocha
+  rake
 
 BUNDLED WITH
    2.1.4
