@@ -11,5 +11,5 @@ task default: :test
 
 desc 'Start'
 task :start do
-    start_game
+    start_todolist
 end

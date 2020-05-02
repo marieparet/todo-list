@@ -1,12 +1,7 @@
 require_relative 'task_manager'
 
-def ask_user_input
-    puts "What do you want to do ?"
-    STDIN.gets.strip
-end
-
-def start_game
-    tasks = retrieve_tasks
+def start_todolist
+    tasks = StorageManager.retrieve_tasks
 
     loop do
 
@@ -23,4 +18,9 @@ def start_game
             break
         end
     end
+end
+
+def ask_user_input
+    puts "What do you want to do ?"
+    STDIN.gets.strip
 end

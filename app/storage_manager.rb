@@ -1,16 +1,17 @@
 require 'json'
 
-FILEPATH = 'db/tasks.json'
+class StorageManager
+    FILEPATH = 'db/tasks.json'
 
-def retrieve_tasks
-    saved_tasks = File.read(FILEPATH)
-    json = JSON.parse(saved_tasks)
+    def self.retrieve_tasks
+        saved_tasks = File.read(FILEPATH)
+        json = JSON.parse(saved_tasks)
 
-    json['saved_tasks']
-end
+        json['saved_tasks']
+    end
 
-def save_tasks(tasks)
-    File.write(FILEPATH, { saved_tasks: tasks }.to_json)
-    tasks
+    def self.save_tasks(tasks)
+        File.write(FILEPATH, { saved_tasks: tasks }.to_json)
+    end
 end
 

@@ -16,13 +16,16 @@ class TodolistTest < Minitest::Test
 
     def test_add_task
         STDIN.stubs(:gets).returns('Biking')
-        tasks = add_task_in([])
+        tasks = []
+        add_task_in(tasks)
+
         assert tasks.include?('Biking')
     end
 
     def test_remove_task
-        STDIN.stubs(:gets).returns('0')
-        tasks = remove_task_from(['Coucou', 'Titi'])
-        assert_equal tasks, ['Titi']
+        STDIN.stubs(:gets).returns('1')
+        tasks = ['Titi', 'Toto']
+        remove_task_from(tasks)
+        assert_equal tasks, ['Toto']
     end
 end
